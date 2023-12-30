@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Examples</title>
+
+    <script>
+        function change()
+        {
+        //    document.paragraph.style.background="red";
+           var highlight = document.getElementById("para").style.background="blue"
+        //    document.getElementsByClassName("para1").innerHTML=highlight
+        }
+
+        //func2:
+        function greet()
+        {
+            var name = document.getElementById('uname').value;
+            var string  = "Hello "+name;
+            // confirm("Entered Name is Correct?");
+            document.getElementsByClassName("greet")[0].innerHTML=string
+        }
+
+
+    </script>
+</head>
+<body>
+    <p>Functions Examples:</p>
+    <pre>Greet- onclick</pre>
+    <input type="text" name="name" id="uname">
+    <button onclick="greet()">Greet</button>
+    <div class="greet" style="background-color: aqua; ;"></div>
+    <br>
+
+    <button onclick="change()" id="btn"> </button>
+    <p class="para1"id="para" style="color: rgb(7, 7, 7);">Color changeed</p>
+
+
+</body>
+</html>

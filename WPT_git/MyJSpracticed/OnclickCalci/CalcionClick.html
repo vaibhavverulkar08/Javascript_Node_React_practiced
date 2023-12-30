@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Caluclator - using Onclick Event</title>
+
+    <!-- script -->
+    <script>
+        function cal() {
+            var opr1 = document.getElementById('num1').value;
+            var opr2 = document.getElementById('num2').value;
+            var ope = document.getElementById('ope').value;
+
+            //calcution logic here:
+            if (ope == '+') {
+                var res = parseInt(opr1) + parseInt(opr2)
+            }
+            if (ope == '-') {
+                var res = parseInt(opr1) - parseInt(opr2)
+            }
+            if (ope == '*') {
+                var res = parseInt(opr1) * parseInt(opr2)
+            }
+            if (ope == '/') {
+                var res = parseInt(opr1) / parseInt(opr2)
+            }
+             document.getElementById('res').value=res
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <div class="div1">
+        <h1>Simple Caluclator - using Onclick Event</h1>
+        <hr>
+    </div>
+
+    <div class="div2">
+        <h3>Calculator</h3>
+        <p>Enter First Number:
+        <p>
+            <input type="number" name="first" id="num1" step="any" style="background-color: aqua; color:darkblue;" />
+        <p>Enter Second Number:
+        <p>
+            <input type="number" name="second" id="num2"style="background-color: aqua;" />
+        <p>Choose the Operation for Calculator
+        <p>
+            <select id="ope" style="background-color: aqua;">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+        <p>Click on Caluclator button to view result</p>
+        <!-- button onclick event &calling function -->
+        <button onclick=cal()>Calculate</button >
+        <input type="text" name="" class="" id="res" readonly="" style="background-color: aquamarine;" />
+
+    </div>
+    <hr>
+</body>
+<footer>Devloped & Design By Vaibahv</footer>
+</html>

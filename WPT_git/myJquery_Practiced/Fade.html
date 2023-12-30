@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MyPractice-Jquery-Examples</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+  // To Fade In:
+  $("#btn1").click(function(){
+    $("#cls1").fadeIn();
+    // $("#div1").fadeIn();
+    // $("#div2").fadeIn();
+    // $("#div3").fadeIn();
+  });
+
+  // To Fade out:
+ $("#btn2").click(function(){
+    $("#cls2").fadeOut();
+    // $("#div1").fadeOut();
+    // $("#div2").fadeOut();
+    // $("#div3").fadeOut();
+  });
+
+  // To Fade Toggle: 
+  $("#btn3").click(function(){
+    $("#cls3").toggle();
+    // $("#div1").fadeToggle();
+    // $("#div2").fadeToggle();
+    // $("#div3").fadeToggle();
+  });
+
+
+});
+</script>
+
+</head>
+<body>
+
+<p>Practice of jquery fadeIn() with different color shade chart.</p><br>
+<div style="color: blueviolet; cursor: pointer;">
+    <button id="btn1">fadeIn</button><br>
+    <button id="btn2">fadeOut</button><br>
+    <button id="btn3">Toggle</button><br>
+<!-- <div id="div0" style="margin-left: 20px; margin-top: 20px; width: 600px;height:800; margin-right: 20px ;background-color:rgb(238, 199, 160);"> -->
+
+<div id ="cls1" style="display: inline;"> <br>
+<div id="div1" style="margin-left: 20px;width:100px;height:100px;display:none;background-color:rgb(244, 107, 2);"></div><br>
+<div id="div2" style="margin-left: 20px;width:100px;height:100px;display:none;background-color:rgb(228, 237, 228);"></div><br>
+<div id="div3" style="margin-left: 20px;width:100px;height:100px;display:none;background-color:rgb(115, 255, 0);"></div>
+</div>
+
+<div id="cls2" style="display: flex;"> <br>
+<div id="div1" style="margin-left: 20px;width:100px;height:100px;display:none;background-color:rgb(244, 107, 2);"></div><br>
+<div id="div2" style="margin-left: 20px;width:100px;height:100px;display:none;background-color:rgb(228, 237, 228);"></div><br>
+<div id="div3" style="margin-left: 20px;width:100px;height:100px;display:none;background-color:rgb(115, 255, 0);"></div>
+</div>
+
+<div id="cls3" style="display: flex;"> <br>
+<div id="div1" style="margin-left: 20px;width:100px;height:100px;display:none;background-color:rgb(244, 107, 2);"></div><br>
+<div id="div2" style="margin-left: 20px;width:100px;height:100px;display:none;background-color:rgb(228, 237, 228);"></div><br>
+<div id="div3" style="margin-left: 20px;width:100px;height:100px;display:none;background-color:rgb(115, 255, 0);"></div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!-- 
+Block scope: let and const
+global scope: var 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block & Global Scope</title>
+
+    <p id="demo"></p>
+    <script>
+        {
+            //x-> Globally accessible 
+            var x = 2; // var keyword used here and it has global scope.
+            // y ->Globally not accessible 
+            let y = 2; // let keyword used here and it has block scope.
+        }
+        document.getElementById("demo").innerHTML = "value of x is:" + x + "Value of y will not be printed.";
+        document.getElementById("demo").innerHTML = "Value of Y is:" + y;
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

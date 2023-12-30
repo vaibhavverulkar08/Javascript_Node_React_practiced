@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MyPractice-Jquery-Examples</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // To Fade Toggle: 
+            $("#btn1").click(function () {
+
+                $("#div1").fadeToggle();
+                $("#div2").fadeToggle();
+                $("#div3").fadeToggle();
+            });
+
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <p>Practice of jquery toggle() with different color shade chart.</p><br>
+    <div style="color: blueviolet; cursor: pointer;">
+        <button id="btn1">Toggle</button><br>
+
+        <div id="div0"
+            style=" display: flex; border-radius: 2px; margin-left: 10px; margin-top: 10px; width: 400px;height:500; margin-right: 20px ;background-color:rgb(8, 8, 1);">
+            <div id="div1"
+                style="margin-left: 20px;width:100px;height:100px;display:none;background-color:rgb(248, 28, 4);">
+            1</div><br>
+            <div id="div2"
+                style="margin-left: 20px;width:100px;height:100px;display:none;background-color:rgb(255, 255, 255);">
+            2</div><br>
+            <div id="div3"
+                style="margin-left: 20px;width:100px;height:100px;display:none;background-color:rgb(103, 219, 8);">
+            3</div><br>
+
+        </div>
+</body>
+
+</html>

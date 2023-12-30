@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title>How to display div elements 
+	using Dropdown Menu in jQuery?</title> 
+	<script src= 
+"https://code.jquery.com/jquery-1.12.4.min.js"> 
+</script> 
+</head> 
+
+<body> 
+	<center> 
+		<h1 style="color:green;"> 
+		GeeksForGeeks 
+	</h1> 
+		<h3> jQuery | 
+		Show and Hide div elements using Dropdown Menu</h3> 
+		<div> 
+			<select> 
+				<option>Select</option> 
+				<option value="C">C</option> 
+				<option value="Cplus">C++</option> 
+				<option value="Python">Python</option> 
+				<option value="Java">Java</option> 
+			</select> 
+		</div> 
+		<div> 
+			<div class="C GFG"
+				style="padding: 30px; 
+						margin-top: 30px; 
+						width :60%; 
+						background:green"> 
+			<strong>C</strong> 
+			is a procedural programming language 
+		</div> 
+			<div class="Cplus GFG"
+				style="padding: 30px; 
+						margin-top: 30px; 
+						width :60%; 
+						background:green"> 
+			<strong>C++</strong> 
+			is a general purpose programming language 
+		</div> 
+			<div class="Python GFG"
+				style="padding: 30px; 
+						margin-top: 30px; 
+						width :60%; 
+						background:green"> 
+			<strong>Python</strong> 
+			is a widely used general-purpose, 
+			high level programming language. 
+		</div> 
+			<div class="Java GFG"
+				style="padding: 30px; 
+						margin-top: 30px; 
+						width :60%; 
+						background:green"> 
+			<strong>Java</strong> 
+			is a most popular programming 
+			language for many years. 
+		</div> 
+		</div> 
+		<script type="text/javascript"> 
+			$(document).ready(function() { 
+				$("select").on('change', function() { 
+					$(this).find("option:selected").each(function() { 
+						var geeks = $(this).attr("value"); 
+						if (geeks) { 
+							$(".GFG").not("." + geeks).hide(); 
+							$("." + geeks).show(); 
+						} else { 
+							$(".GFG").hide(); 
+						} 
+
+					}); 
+				}).change(); 
+			}); 
+		</script> 
+	</center> 
+</body> 
+
+</html> 

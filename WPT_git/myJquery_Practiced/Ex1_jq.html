@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Examples</title>
+    <script src="jq/jquery-3.7.1.min.js"></script>
+
+    <!-- you can use cdn : -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        // Syntaax: 
+        /*
+            $(document).ready(function () {
+            // functions & methods goes here 
+            }
+            );
+        */
+
+        //Example1 :  To Hide an all element , here we hidding pre tag element:
+
+        // Step:
+        //#1. Writting here function hide to hide element pre tag.
+        // syntax to Hide:  $("p").hide() - hides all <p> elements. 
+        //#2.
+        // $("divid1").hide(); -->  This will hide all ,user cant see the pre tag content.
+        //#3.     
+        // allow user to click on text.
+        // apply method with help of function & this hide data after clicking on the text.
+
+        //Snippet1:
+        // $("divid1").hide();
+        /* 
+            $(document).ready
+           (
+                function () {
+                    $("pre").click
+                        (
+                            function () {
+                                $(this).hide()
+                            }
+                        )
+                }
+            );
+        */
+
+        //Snippet2: 
+        console.log($);
+
+        $(document).ready
+            (
+                //method1:
+                
+                function () {
+                    $("#btn1").click
+                    (
+                        //button Hide 
+                        function () {
+                            $("#para1").hide()
+                        }
+                    )
+
+                    //Button Show 
+
+                    $("#btn2").click(
+                        function () {
+                            $("#para1").show()
+                        }
+                    )                
+                }
+            );
+
+    </script>
+
+
+</head>
+
+<body>
+    <div>
+    <h1>JQuery Magic</h1>
+    <hr>
+    </div>
+    
+    <div id="divid1">
+        <br>
+            <h2> Hide / Show The Below Paragraph</h2>
+            <button id="btn1">Hide</button><br>
+            <button id="btn2">Show</button>
+
+        <p style="font-size: small; font-family: cursive;" id="para1" >
+            jQuery Syntax:
+            <br>The jQuery syntax is tailor-made for selecting HTML elements and performing some action on the element(s).
+            Basic syntax is: $(selector).action()
+            A $ sign to define/access jQuery
+            A (selector) to "query (or find)" HTML elements
+            A jQuery action() to be performed on the element(s)<br>
+            Examples:
+            $(this).hide() - hides the current element. <br>
+            $("p").hide() - hides all < p >elements. <br>
+            $(".test").hide() - hides all elements with class="test". <br>
+            $("#test").hide() - hides the element with id="test". <br>
+        </p> 
+        <pre style="text-align: center;"> Hi This Page is design & developed by Vaibhav Verulkar </pre>
+    </div>
+ 
+
+
+</body>
+
+</html>
